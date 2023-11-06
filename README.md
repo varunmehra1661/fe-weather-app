@@ -27,8 +27,7 @@ This Angular application allows users to select a country from a dropdown list a
 ## Technologies Used
 
 - Angular
-- Angular Material
-- HttpClient
+
 
 ## API References
 
