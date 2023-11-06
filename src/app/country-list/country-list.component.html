@@ -1,0 +1,12 @@
+<div class="country-list-container">
+    <h2>Select a Country</h2>
+    <mat-form-field appearance="fill">
+        <mat-label>Country</mat-label>
+        <mat-select [formControl]="countryControl" [compareWith]="compareFn" placeholder="Select a country">
+            <mat-option *ngFor="let country of countries" [value]="country">
+                {{ country.country }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onViewWeather()" class="custom-button">View Weather</button>
+</div>
